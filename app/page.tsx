@@ -1,6 +1,8 @@
 import CompanionCard from '@/components/CompanionCard'
+import CompanionList from '@/components/CompanionList'
 import Navbar from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
+import { recentSessions } from '@/constants'
 import React from 'react'
 
 const Page = () => {
@@ -14,7 +16,7 @@ const Page = () => {
             topic="Nural Networking"
             subject = "AI"
             duration = {45}
-            color="#687FE5"
+            color="#ffda6e"
           />
 
           <CompanionCard
@@ -23,7 +25,7 @@ const Page = () => {
             topic="Differentiation"
             subject = "Maths"
             duration = {45}
-            color="#FCD8CD"
+            color="#e5d0ff"
           />
 
           <CompanionCard
@@ -32,8 +34,13 @@ const Page = () => {
             topic="Standard measuring"
             subject = "Physics"
             duration = {45}
-            color="#EBD6FB"
+            color="#BDE7FF"
           />
+
+      </section>
+
+      <section className="home-section">
+        <CompanionList title = "Recently completed sessions" companions={recentSessions} classNames="w-2/3 max-lg:w-full"/>
       </section>
     </main>
   )
