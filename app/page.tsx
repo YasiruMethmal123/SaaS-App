@@ -9,7 +9,7 @@ import React from 'react'
 const Page = () => {
   return (
     <main>
-      <h1>Profiel Section</h1>
+      <h1>Dashboard</h1>
       <section className="home-section">
         <CompanionCard
             id = "123"
