@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/select"
 import {subjects} from "@/constants";
 import {Textarea} from "@/components/ui/textarea";
+import { Button } from "./ui/button";
 
 const formSchema = z.object({
     name: z.string().min(1, { message: "Companion is required." }),
@@ -199,7 +200,7 @@ const CompanionForm = () => {
                         </FormItem>
                     )}
                 />
-                <button type="submit" className="w-full cursor-pointer">Build Your Companion</button>
+                <Button type="submit" className="w-full cursor-pointer">Build Your Companion</Button>
             </form>
         </Form>
   )
